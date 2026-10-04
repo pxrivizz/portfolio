@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "name": "Halil portfolio: reference-video DNA",
+    "description": "Observations from inner website viewport only. Unknown fields explicitly marked; technology values are implementation proposals, not source-code claims.",
+    "source_references": [
+      "reference/frame_01.png … frame_30.png",
+      "reference/detail_01.png",
+      "reference/detail_03.png",
+      "reference/detail_27.png"
+    ],
+    "created_at": "2026-10-04"
+  },
+  "design_system": {
+    "color": {
+      "palette_type": "Neutral monochrome opening; scene-specific artwork colors; light project scene",
+      "primary": {
+        "hex": "#1a1a1b",
+        "role": "Measured dark opening background"
+      },
+      "secondary": {
+        "hex": "#f4f3f5",
+        "role": "Measured light foreground text cluster"
+      },
+      "accent": {
+        "hex": "#f4f3f5",
+        "role": "No chromatic UI accent observed; white used for outlines and path"
+      },
+      "neutral": {
+        "scale": [
+          "#f4f3f5",
+          "#c4c5c7",
+          "#a9aaab",
+          "#828182",
+          "#595959",
+          "#343434",
+          "#1a1a1b",
+          "#131314"
+        ],
+        "usage": "Measured video clusters, ordered light to dark. #f4f3f5 foreground; #1a1a1b dominant opening background."
+      },
+      "semantic": {
+        "success": "Not observable in the supplied video; do not infer an exact implementation.",
+        "warning": "Not observable in the supplied video; do not infer an exact implementation.",
+        "error": "Not observable in the supplied video; do not infer an exact implementation.",
+        "info": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "surface": {
+        "background": "#1a1a1b",
+        "card": "Not observable in the supplied video; do not infer an exact implementation.",
+        "elevated": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "contrast_strategy": "Light type over dark opening; dark type over light project landscape",
+      "measurement": {
+        "k": 8,
+        "sampling": {
+          "method": "deterministic_stratified",
+          "max_pixels": 160000,
+          "sampled_pixels": 160000
+        }
+      },
+      "measured_palette": [
+        {
+          "hex": "#1a1a1b",
+          "coverage": 0.851,
+          "role": "background"
+        },
+        {
+          "hex": "#343434",
+          "coverage": 0.0299,
+          "role": "unassigned"
+        },
+        {
+          "hex": "#c4c5c7",
+          "coverage": 0.0281,
+          "role": "unassigned"
+        },
+        {
+          "hex": "#828182",
+          "coverage": 0.0229,
+          "role": "unassigned"
+        },
+        {
+          "hex": "#131314",
+          "coverage": 0.0215,
+          "role": "unassigned"
+        },
+        {
+          "hex": "#a9aaab",
+          "coverage": 0.0204,
+          "role": "unassigned"
+        },
+        {
+          "hex": "#595959",
+          "coverage": 0.0201,
+          "role": "unassigned"
+        },
+        {
+          "hex": "#f4f3f5",
+          "coverage": 0.0061,
+          "role": "text"
+        }
+      ]
+    },
+    "typography": {
+      "type_scale": {
+        "display": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "heading_1": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "heading_2": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "heading_3": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "body": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "body_small": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "caption": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        },
+        "overline": {
+          "size": "Not observable in the supplied video; do not infer an exact implementation.",
+          "weight": "Not observable in the supplied video; do not infer an exact implementation.",
+          "line_height": "Not observable in the supplied video; do not infer an exact implementation.",
+          "tracking": "Not observable in the supplied video; do not infer an exact implementation."
+        }
+      },
+      "font_families": {
+        "heading": "Narrow high-contrast serif; exact family unknown",
+        "body": "Small sans-serif for supporting content; exact family unknown",
+        "mono": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "font_style_notes": "Greeting is small and isolated; role text is oversized within perspective tunnel; hub titles are stacked serif; spaced heading characters"
+    },
+    "spacing": {
+      "base_unit": "Not observable in the supplied video; do not infer an exact implementation.",
+      "scale": "Not observable in the supplied video; do not infer an exact implementation.",
+      "content_density": "Sparse opening and hub, denser surrounding project wall",
+      "section_rhythm": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "layout": {
+      "grid_system": "Not observable in the supplied video; do not infer an exact implementation.",
+      "max_content_width": "Not observable in the supplied video; do not infer an exact implementation.",
+      "columns": "Two primary hub artwork cards",
+      "gutter": "Not observable in the supplied video; do not infer an exact implementation.",
+      "breakpoints": "Not observable in the supplied video; do not infer an exact implementation.",
+      "alignment_tendency": "Centered opening; overlapping hub cards; camera-relative spatial scenes"
+    },
+    "shape": {
+      "border_radius": {
+        "small": "Not observable in the supplied video; do not infer an exact implementation.",
+        "medium": "Not observable in the supplied video; do not infer an exact implementation.",
+        "large": "Not observable in the supplied video; do not infer an exact implementation.",
+        "pill": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "border_usage": "Thin hover frame on hub; dashed project panels become solid on focus/hover",
+      "divider_style": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "elevation": {
+      "shadow_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "levels": {
+        "low": "Not observable in the supplied video; do not infer an exact implementation.",
+        "medium": "Not observable in the supplied video; do not infer an exact implementation.",
+        "high": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "depth_cues": [
+        "Occlusion",
+        "Perspective scaling",
+        "Foreground artwork layers",
+        "Camera travel",
+        "Card enlargement"
+      ]
+    },
+    "iconography": {
+      "style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "stroke_weight": "Not observable in the supplied video; do not infer an exact implementation.",
+      "size_scale": "Not observable in the supplied video; do not infer an exact implementation.",
+      "preferred_set": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "motion": {
+      "easing": "Not observable in the supplied video; do not infer an exact implementation.",
+      "duration_scale": {
+        "micro": "Not observable in the supplied video; do not infer an exact implementation.",
+        "normal": "Not observable in the supplied video; do not infer an exact implementation.",
+        "macro": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "entrance_pattern": "Not observable in the supplied video; do not infer an exact implementation.",
+      "exit_pattern": "Not observable in the supplied video; do not infer an exact implementation.",
+      "philosophy": "Cinematic spatial journey; timings in clip may be accelerated"
+    },
+    "components": {
+      "button_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "input_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "card_style": "Overlapping rectangular hub artwork; curved band of project panels",
+      "navigation_pattern": "Hub branches into work/education and projects; small footer links",
+      "modal_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "list_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "component_notes": "Not observable in the supplied video; do not infer an exact implementation."
+    }
+  },
+  "design_style": {
+    "aesthetic": {
+      "mood": [
+        "Surreal",
+        "Quiet at entry",
+        "Immersive",
+        "Art-led"
+      ],
+      "visual_metaphor": "Travel through clouds and a typographic portal into painted worlds",
+      "era_influence": "Not observable in the supplied video; do not infer an exact implementation.",
+      "genre": "Cinematic creative portfolio",
+      "personality_traits": "Not observable in the supplied video; do not infer an exact implementation.",
+      "adjectives": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "visual_language": {
+      "complexity": "Not observable in the supplied video; do not infer an exact implementation.",
+      "ornamentation": "Not observable in the supplied video; do not infer an exact implementation.",
+      "whitespace_usage": "Large dark negative space around small greeting, with alpha gaps between clouds",
+      "visual_weight_distribution": "Not observable in the supplied video; do not infer an exact implementation.",
+      "focal_strategy": "Progressive reveal: greeting → portal → choice → artwork",
+      "contrast_level": "Not observable in the supplied video; do not infer an exact implementation.",
+      "texture_usage": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "composition": {
+      "hierarchy_method": "Not observable in the supplied video; do not infer an exact implementation.",
+      "balance_type": "Not observable in the supplied video; do not infer an exact implementation.",
+      "flow_direction": "Forward flight, brief roll, branching card zoom, horizontal project exploration",
+      "grouping_strategy": "Not observable in the supplied video; do not infer an exact implementation.",
+      "negative_space_role": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "imagery": {
+      "photo_treatment": "Not observable in the supplied video; do not infer an exact implementation.",
+      "illustration_style": "Layered painterly landscapes; distinct bright cloud masses",
+      "graphic_elements": "Not observable in the supplied video; do not infer an exact implementation.",
+      "pattern_usage": "Not observable in the supplied video; do not infer an exact implementation.",
+      "image_shape": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "interaction_feel": {
+      "feedback_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "hover_behavior": "Hub frame and title reveal; project panel expansion and description",
+      "transition_personality": "Not observable in the supplied video; do not infer an exact implementation.",
+      "loading_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "microinteraction_density": "Not observable in the supplied video; do not infer an exact implementation."
+    },
+    "brand_voice_in_ui": {
+      "tone": "Not observable in the supplied video; do not infer an exact implementation.",
+      "formality": "Not observable in the supplied video; do not infer an exact implementation.",
+      "cta_style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "empty_state_approach": "Not observable in the supplied video; do not infer an exact implementation.",
+      "error_tone": "Not observable in the supplied video; do not infer an exact implementation."
+    }
+  },
+  "visual_effects": {
+    "overview": {
+      "effect_intensity": "heavy-immersive",
+      "performance_tier": "Not observable in the supplied video; do not infer an exact implementation.",
+      "fallback_strategy": "Required implementation: static HTML content, direct hub for reduced motion",
+      "primary_technology": "Proposed: React, GSAP, R3F/Three.js; source implementation unverified"
+    },
+    "background_effects": {
+      "type": "Not observable in the supplied video; do not infer an exact implementation.",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "color_palette": "Not observable in the supplied video; do not infer an exact implementation.",
+        "speed": "Not observable in the supplied video; do not infer an exact implementation.",
+        "density": "Not observable in the supplied video; do not infer an exact implementation.",
+        "opacity": "Not observable in the supplied video; do not infer an exact implementation.",
+        "blend_mode": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "particle_systems": {
+      "enabled": true,
+      "type": "Dense small starfield",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Proposed THREE.Points",
+      "params": {
+        "count": "Not observable in the supplied video; do not infer an exact implementation.",
+        "shape": "Not observable in the supplied video; do not infer an exact implementation.",
+        "size_range": "Not observable in the supplied video; do not infer an exact implementation.",
+        "movement_pattern": "Not observable in the supplied video; do not infer an exact implementation.",
+        "color_behavior": "Not observable in the supplied video; do not infer an exact implementation.",
+        "interaction": "Not observable in the supplied video; do not infer an exact implementation.",
+        "spawn_area": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "3d_elements": {
+      "enabled": true,
+      "type": "Perceived spatial scene with portal, text corridor, artwork depth and cylindrical panels",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "renderer": "Not observable in the supplied video; do not infer an exact implementation.",
+        "lighting": "Not observable in the supplied video; do not infer an exact implementation.",
+        "camera": "Forward travel and roll observed; exact camera model unknown",
+        "materials": "Not observable in the supplied video; do not infer an exact implementation.",
+        "geometry": "Not observable in the supplied video; do not infer an exact implementation.",
+        "post_processing": "Not observable in the supplied video; do not infer an exact implementation.",
+        "interaction_model": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "shader_effects": {
+      "enabled": false,
+      "type": "Not observable in the supplied video; do not infer an exact implementation.",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "uniforms": "Not observable in the supplied video; do not infer an exact implementation.",
+        "vertex_manipulation": "Not observable in the supplied video; do not infer an exact implementation.",
+        "fragment_output": "Not observable in the supplied video; do not infer an exact implementation.",
+        "noise_type": "Not observable in the supplied video; do not infer an exact implementation.",
+        "distortion": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "scroll_effects": {
+      "parallax": {
+        "enabled": true,
+        "layers": "Multiple cloud/artwork depth planes; exact source count unknown",
+        "depth_range": "Not observable in the supplied video; do not infer an exact implementation.",
+        "speed_curve": "Not observable in the supplied video; do not infer an exact implementation."
+      },
+      "scroll_triggered_animations": {
+        "enabled": true,
+        "trigger_points": "Not observable in the supplied video; do not infer an exact implementation.",
+        "animation_type": "Not observable in the supplied video; do not infer an exact implementation.",
+        "scrub_behavior": "Scroll scrub required by user; clip alone cannot prove original event wiring"
+      },
+      "scroll_morphing": {
+        "enabled": false,
+        "description": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "text_effects": {
+      "type": "Individual character choreography and perspective role typography",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "split_strategy": "Heading appears letter by letter",
+        "animation_per_unit": "Not observable in the supplied video; do not infer an exact implementation.",
+        "stagger": "Not observable in the supplied video; do not infer an exact implementation.",
+        "effect_style": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "cursor_effects": {
+      "enabled": false,
+      "type": "Not observable in the supplied video; do not infer an exact implementation.",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "shape": "Not observable in the supplied video; do not infer an exact implementation.",
+        "size": "Not observable in the supplied video; do not infer an exact implementation.",
+        "blend_mode": "Not observable in the supplied video; do not infer an exact implementation.",
+        "trail": "Not observable in the supplied video; do not infer an exact implementation.",
+        "interaction_zone": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "image_effects": {
+      "type": "Artwork card-to-scene zoom and parallax",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "filter_pipeline": "Not observable in the supplied video; do not infer an exact implementation.",
+        "hover_transform": "Not observable in the supplied video; do not infer an exact implementation.",
+        "reveal_animation": "Not observable in the supplied video; do not infer an exact implementation.",
+        "distortion_type": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "glassmorphism_neumorphism": {
+      "enabled": false,
+      "style": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "blur_radius": "Not observable in the supplied video; do not infer an exact implementation.",
+        "transparency": "Not observable in the supplied video; do not infer an exact implementation.",
+        "border_treatment": "Not observable in the supplied video; do not infer an exact implementation.",
+        "shadow_type": "Not observable in the supplied video; do not infer an exact implementation.",
+        "light_source_angle": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "canvas_drawings": {
+      "enabled": false,
+      "type": "Not observable in the supplied video; do not infer an exact implementation.",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "technology": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "draw_method": "Not observable in the supplied video; do not infer an exact implementation.",
+        "animation_loop": "Not observable in the supplied video; do not infer an exact implementation.",
+        "color_scheme": "Not observable in the supplied video; do not infer an exact implementation.",
+        "responsiveness": "Not observable in the supplied video; do not infer an exact implementation.",
+        "interaction": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "svg_animations": {
+      "enabled": false,
+      "type": "Not observable in the supplied video; do not infer an exact implementation.",
+      "description": "Not observable in the supplied video; do not infer an exact implementation.",
+      "params": {
+        "animation_method": "Not observable in the supplied video; do not infer an exact implementation.",
+        "path_morphing": "Not observable in the supplied video; do not infer an exact implementation.",
+        "stroke_animation": "Not observable in the supplied video; do not infer an exact implementation.",
+        "filter_effects": "Not observable in the supplied video; do not infer an exact implementation."
+      }
+    },
+    "composite_notes": "Outer white video frame is excluded. Exact fonts, easing, shaders, projection and input mappings remain unverified. Proposed engineering must preserve accessible controls and phase-by-phase approvals."
+  }
+}

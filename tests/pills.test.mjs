@@ -1,0 +1,76 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
+import { initWorkPill } from '../js/pills/work.mjs';
+const require = createRequire(import.meta.url);
+const { gsap } = require('gsap/dist/gsap');
+
+test('Work: actual GSAP timelines count once, lock rapid hits, shatter, reset and clean up', () => {
+  const reduce = new EventTarget(); reduce.matches = false;
+  const fine = new EventTarget(); fine.matches = true;
+  globalThis.window = { matchMedia: query => query.includes('reduced') ? reduce : fine };
+  globalThis.document = new EventTarget(); document.hidden = false;
+  const target = () => ({ x: 0, y: 0, rotation: 0, opacity: 1, getAttribute: () => null, removeAttribute() {}, setAttribute() {} });
+  const letters = Array.from({ length: 4 }, target), hammer = target();
+  const button = new EventTarget(); button.disabled = true;
+  button.querySelectorAll = () => letters; button.querySelector = () => hammer;
+  button.matches = () => true;
+  const status = {};
+  let timeline;
+  const engine = { ...gsap, timeline: options => (timeline = gsap.timeline({ ...options, paused: true })) };
+  const dispose = initWorkPill(button, { gsap: engine, status });
+  assert.equal(button.disabled, false);
+  for (let count = 1; count <= 14; count++) {
+    button.dispatchEvent(new Event('click'));
+    const activeTimeline = timeline;
+    button.dispatchEvent(new Event('click'));
+    assert.equal(timeline, activeTimeline, 'Rapid hits must not create overlapping timelines');
+    timeline.seek(.19, false);
+    assert.match(status.textContent, count === 14 ? /Shattered/ : new RegExp(`^${count} / 14`));
+    timeline.progress(1, false);
+    if (count < 14) assert.ok(letters[3].y > letters[0].y, 'Last letter drifts further down');
+  }
+  assert.match(status.textContent, /Fresh start/);
+  letters.forEach(el => { assert.equal(el.y, 0); assert.equal(el.opacity, 1); });
+  button.dispatchEvent(new Event('click')); timeline.seek(.19, false);
+  dispose.reset(); assert.match(status.textContent, /0 \/ 14/);
+  reduce.matches = true; reduce.dispatchEvent(new Event('change'));
+  const before = timeline;
+  button.dispatchEvent(new Event('click')); assert.equal(timeline, before);
+  assert.match(status.textContent, /Reduced motion/);
+  reduce.matches = false; reduce.dispatchEvent(new Event('change'));
+  dispose(); dispose();
+  button.dispatchEvent(new Event('click')); assert.equal(timeline, before);
+  assert.equal(button.disabled, true);
+  assert.equal(gsap.getTweensOf([...letters, hammer]).length, 0);
+  gsap.ticker.sleep();
+});
+
+test('Navigation pills preserve anchor clicks, reset on exit and clean up', async () => {
+  const media = new EventTarget(); media.matches = false;
+  globalThis.window = new EventTarget(); window.matchMedia = () => media;
+  globalThis.document = new EventTarget(); document.readyState = 'loading'; document.hidden = false;
+  const { initNavigationPills } = await import('../js/pills/navigation.mjs');
+  const target = () => ({ x: 0, y: 0, rotation: 0, opacity: 1, getAttribute: () => null, removeAttribute() {} });
+  const letters = Array.from({ length: 4 }, target), hammer = target();
+  const link = new EventTarget(), dialog = new EventTarget();
+  link.querySelectorAll = () => letters; link.querySelector = () => hammer;
+  link.matches = () => false; link.closest = () => dialog;
+  let timeline;
+  const engine = { ...gsap, timeline: options => (timeline = gsap.timeline({ ...options, paused: true })) };
+  const cleanup = initNavigationPills({ querySelectorAll: () => [link] }, engine);
+  assert.equal('disabled' in link, false);
+  assert.equal(link.dispatchEvent(new Event('click', { cancelable: true })), true, 'Animation never cancels navigation');
+  timeline.progress(1, false); assert.ok(letters[3].y > 0);
+  link.dispatchEvent(new Event('pointerleave')); assert.equal(letters[3].y, 0);
+  link.dispatchEvent(new Event('click')); timeline.progress(1, false);
+  dialog.dispatchEvent(new Event('close')); assert.equal(letters[3].y, 0);
+  cleanup(); const previous = timeline;
+  link.dispatchEvent(new Event('click')); assert.equal(timeline, previous);
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.equal((html.match(/href="#work" class="nav-work-pill" data-nav-work/g) || []).length, 2);
+  assert.equal((html.match(/src="[^"]*gsap.min.js"/g) || []).length, 1);
+  assert.ok(!html.includes('href="css/pills.css'), 'Paper demo styles must stay isolated');
+  gsap.ticker.sleep();
+});

@@ -1,0 +1,14 @@
+.motion-pill { --pill-color: #e6d9bd; --pill-hover: #cdbb8f; --pill-ink: #171612; --pill-height: 50px; --pill-font: var(--font-body, 'Manrope', sans-serif); --pill-font-size: 16px; }
+.hero__nav .motion-pill, .site-menu nav .motion-pill, .reading-header nav .motion-pill, .pill-track .motion-pill {
+  display: inline-flex; position: relative; isolation: isolate; align-items: center; justify-content: center; gap: 10px; flex: 0 0 auto;
+  min-height: var(--pill-height); padding: 0 20px; border: 0; border-radius: 999px; width: fit-content; background: var(--pill-color); color: var(--pill-ink); font: 700 var(--pill-font-size)/1 var(--pill-font); text-decoration: none;
+}
+.motion-pill::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--pill-hover); opacity: 0; transition: opacity 160ms ease; z-index: -1; pointer-events: none; }
+.hero__nav .motion-pill::after, .motion-pill::after { content: ''; position: absolute; inset: 0; height: auto; border-radius: inherit; background: url('../assets/icons/pill-grain.svg'); opacity: .07; transform: none; transition: none; z-index: -1; pointer-events: none; }
+.motion-pill:focus-visible { outline: 3px solid var(--gold, #171612); outline-offset: 5px; }
+.motion-pill:focus-visible::before, .motion-pill:active::before, .motion-pill[aria-pressed='true']::before { opacity: 1; }
+.motion-pill-icon { width: 30px; height: 30px; display: inline-flex; flex: 0 0 30px; pointer-events: none; }
+.motion-pill-icon svg, .motion-pill-icon img { width: 100%; height: 100%; overflow: visible; }
+@media (hover: hover) and (pointer: fine) { .motion-pill:hover::before { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .motion-pill::before { transition: none; } }
+@media (min-width: 801px) and (max-width: 1150px) { .hero__nav { gap: .75rem; } .hero__nav .motion-pill { padding-inline: 12px; } }

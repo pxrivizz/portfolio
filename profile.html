@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Halil Çiftçi — quick profile, education, technical focus, selected projects and contact." />
+    <meta name="theme-color" content="#EFE8DF" />
+    <title>Halil Çiftçi — Quick profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css?v=20261002-details1" />
+    <link rel="stylesheet" href="css/pages.css?v=20261002-resume1" />
+    <link rel="stylesheet" href="css/motion-pills.css?v=20261002-visible2" />
+    <script src="assets/vendor/gsap.min.js" defer></script>
+    <script src="assets/vendor/MorphSVGPlugin.min.js" defer></script>
+    <script type="module" src="js/pills/extras.mjs?v=20261002-visible2"></script>
+    <script src="content.js?v=20261002-resume1" defer></script>
+    <script src="js/detail-ui.js?v=20261002-details1" defer></script>
+    <script src="js/resume.js?v=20261002-resume1" defer></script>
+    <script src="js/profile.js?v=20261002-resume1" defer></script>
+  </head>
+  <body class="reading-page profile-page">
+    <a class="skip-link" href="#profile-content">Skip to profile</a>
+    <header class="reading-header">
+      <a href="index.html" class="reading-brand">pxrivizz <span>/ quick profile</span></a>
+      <nav aria-label="Profile actions">
+        <a href="index.html">Full portfolio ↗</a>
+        <a href="mailto:halilciftci39@gmail.com">Email</a>
+        <button type="button" data-print-profile hidden>Print / Save PDF</button>
+        <a data-cv-download hidden>Download CV</a>
+        <a data-cv-view hidden>View CV</a>
+      </nav>
+    </header>
+    <main id="profile-content" class="reading-main">
+      <header class="profile-intro">
+        <div>
+          <p class="reading-kicker" data-profile-role>AI Developer</p>
+          <h1 data-profile-name>Halil Çiftçi</h1>
+          <p class="reading-lead" data-profile-summary>Information Systems Engineering student with experience in Moodle development at Sabancı University and software leadership at APECTRA.</p>
+        </div>
+        <img class="profile-photo" data-profile-photo src="assets/images/halil-ciftci.jpeg" width="400" height="400" alt="Halil Çiftçi — portrait" />
+      </header>
+      <dl class="profile-facts" data-profile-facts></dl>
+      <div class="profile-columns">
+        <div class="profile-column">
+          <section aria-labelledby="profile-expertise-title">
+            <h2 id="profile-expertise-title">Technical focus</h2>
+            <ul class="profile-skills" data-profile-skills></ul>
+          </section>
+          <section aria-labelledby="profile-education-title">
+            <h2 id="profile-education-title">Education</h2>
+            <div data-profile-education></div>
+          </section>
+          <section aria-labelledby="profile-languages-title">
+            <h2 id="profile-languages-title">Languages</h2>
+            <dl class="profile-languages" data-profile-languages></dl>
+          </section>
+          <section aria-labelledby="profile-capabilities-title">
+            <h2 id="profile-capabilities-title">Skills & tools</h2>
+            <div class="profile-capabilities" data-profile-capabilities></div>
+          </section>
+        </div>
+        <div>
+          <section id="experience" class="profile-experience" aria-labelledby="profile-experience-title">
+            <h2 id="profile-experience-title">Experience</h2>
+            <div data-profile-experience></div>
+          </section>
+          <section id="selected-projects" aria-labelledby="profile-projects-title">
+            <h2 id="profile-projects-title">Selected projects</h2>
+            <div class="profile-projects" data-profile-projects></div>
+          </section>
+          <section class="profile-cv-projects" aria-labelledby="profile-cv-projects-title">
+            <h2 id="profile-cv-projects-title">Projects from my CV</h2>
+            <ul data-profile-cv-projects></ul>
+          </section>
+          <section class="profile-contact" aria-labelledby="profile-contact-title">
+            <h2 id="profile-contact-title">Let's connect</h2>
+            <ul data-profile-contact></ul>
+          </section>
+        </div>
+      </div>
+      <p class="print-hint">For a PDF copy, choose “Save as PDF” in your browser's print dialog.</p>
+      <noscript><p>Enable JavaScript to load the complete profile. You can also contact <a href="mailto:halilciftci39@gmail.com">halilciftci39@gmail.com</a>.</p></noscript>
+    </main>
+    <footer class="reading-footer"><span>Halil Çiftçi / pxrivizz</span><a href="index.html">Back to the full portfolio ↗</a></footer>
+  </body>
+</html>

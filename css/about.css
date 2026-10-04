@@ -1,0 +1,89 @@
+.about {
+  position: relative;
+  padding: clamp(4rem, 7vw, 7rem) var(--page-pad) clamp(4rem, 7vw, 7rem);
+  color: var(--cream);
+  background: var(--black);
+  overflow: clip;
+}
+
+.about__inner { max-width: 1440px; margin-inline: auto; }
+.about__header { display: flex; justify-content: space-between; align-items: center; }
+.about__header h2 {
+  margin: 0;
+  font: 400 clamp(3rem, 6.8vw, 7rem)/1 var(--font-display);
+  letter-spacing: -.025em;
+}
+.about__mark { color: var(--gold); font-size: clamp(2.5rem, 4vw, 4rem); line-height: 1; }
+.about__string { height: 80px; margin-block: 0 1.8rem; touch-action: pan-y; }
+.about__string svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.about__string path { fill: none; stroke: var(--gold); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.about__body { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: clamp(2rem, 6.5vw, 7rem); align-items: center; }
+.about__portrait { margin: 0; }
+.portrait-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgb(201 177 123 / .22);
+  padding: 0;
+  overflow: visible;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  background: var(--gold);
+  color: var(--black);
+  cursor: pointer;
+}
+.portrait-card__name { position: absolute; inset: auto 0 0; display: flex; flex-direction: column; align-items: center; gap: .5rem; padding: 1rem .75rem; opacity: 0; transform: translate3d(0, 12px, 0); transition: transform var(--duration-standard) var(--ease-out), opacity var(--duration-standard) var(--ease-out); pointer-events: none; }
+.portrait-card__signature { font: 400 clamp(2.5rem, 4vw, 3.3rem)/1 var(--font-script); overflow-wrap: anywhere; }
+.portrait-card__role { font-size: .6rem; letter-spacing: .14em; font-weight: 700; }
+.portrait-card__photo { position: absolute; inset: 0; display: block; pointer-events: none; transform-origin: 50% 10%; transform: translateZ(0); transition: transform var(--duration-standard) var(--ease-out), opacity var(--duration-quick) ease; }
+.portrait-card__photo { transform-style: preserve-3d; }
+.portrait-card__tilt { position: relative; display: block; width: 100%; height: 100%; transform: rotateX(0deg) rotateY(0deg); transform-style: preserve-3d; transition: transform var(--duration-quick) var(--ease-out); }
+.portrait-card__tilt::after { content: ""; position: absolute; inset: 0; box-shadow: 0 22px 36px rgb(0 0 0 / .3); opacity: 0; transition: opacity var(--duration-standard) var(--ease-out); }
+.portrait-card__photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.portrait-card.is-open .portrait-card__photo { transform: translate3d(0, -5%, 65px) rotateX(7deg) rotateY(-8deg) scale(.76); }
+.portrait-card.is-open .portrait-card__tilt::after { opacity: 1; }
+.portrait-card.is-open .portrait-card__name { opacity: 1; transform: translate3d(0, 0, 28px); }
+.portrait-card__hint { position: absolute; bottom: 1rem; right: 1rem; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 1px solid rgb(201 177 123 / .55); border-radius: 50%; background: var(--black); color: var(--gold); transform: translateZ(30px); pointer-events: none; transition: opacity var(--duration-quick) ease; }
+.portrait-card.is-open .portrait-card__hint { opacity: 0; }
+.about__portrait figcaption { display: flex; gap: 1rem; justify-content: space-between; margin-top: .85rem; font-size: .65rem; }
+.about__portrait figcaption > :last-child { color: var(--gold); }
+.about__statement { margin: 0; max-width: 19ch; font: 600 clamp(2rem, 3.85vw, 4rem)/1.13 var(--font-body); letter-spacing: -.055em; }
+.about__accent { color: var(--gold); }
+.about__paragraphs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: clamp(1.75rem, 3vw, 3rem); }
+.about__paragraphs p { margin: 0; color: #bdb6ac; font-size: .9rem; line-height: 1.8; overflow-wrap: anywhere; }
+.about__line { display: block; overflow: clip; padding-bottom: .12em; margin-bottom: -.12em; }
+.about__line-inner { display: block; }
+.about__word { display: inline-block; }
+.about__facts { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.75rem; margin: clamp(3.5rem, 6vw, 6rem) 0 0; border-top: 1px solid rgb(201 177 123 / .28); padding-top: 1.75rem; }
+.about__fact dt { font-size: .7rem; color: var(--gold); margin-bottom: .7rem; }
+.about__fact dd { margin: 0; font-size: .82rem; font-weight: 500; overflow-wrap: anywhere; }
+.about__experience { margin-top: clamp(3rem, 5vw, 5rem); }
+.about__experience-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.about__experience-heading h3 { margin: 0; font-size: 1.4rem; }
+.about__experience-heading a { color: var(--gold); font-size: .8rem; padding-block: .6rem; text-decoration: underline; text-underline-offset: .25em; }
+.about__experience-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.about__experience .resume-entry { border-top: 1px solid rgb(201 177 123 / .28); padding-top: 1.2rem; }
+.about__experience .resume-entry h4 { margin: .8rem 0 .4rem; font-size: 1.2rem; }
+.about__experience .resume-entry p { color: #bdb6ac; font-size: .85rem; line-height: 1.7; margin: .5rem 0; }
+.about__experience .resume-entry .resume-entry__meta { color: var(--gold); font-size: .7rem; }
+.about__experience .resume-entry .resume-entry__role { color: var(--cream); font-weight: 600; }
+@media (max-width: 1000px) {
+  .about__facts { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 2rem; }
+}
+@media (max-width: 700px) {
+  .about__body { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+  .about__experience-list { grid-template-columns: 1fr; }
+  .about__portrait { width: min(100%, 25rem); }
+  .about__string { height: 64px; margin-bottom: 1rem; }
+  .about__statement { font-size: clamp(1.8rem, 7.5vw, 3rem); max-width: 22ch; }
+  .about__paragraphs { gap: 1rem; }
+  .about__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portrait-card__photo, .portrait-card__name, .portrait-card__hint, .portrait-card__tilt, .portrait-card__tilt::after { transition: none; }
+  .portrait-card__tilt { transform: none !important; }
+  .portrait-card.is-open .portrait-card__photo { transform: none; opacity: .12; }
+  .portrait-card__name, .portrait-card.is-open .portrait-card__name { transform: none; }
+  .portrait-card.is-open .portrait-card__tilt::after { opacity: 0; }
+}

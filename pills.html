@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e9">
+  <title>Motion playground — Halil Çiftçi</title>
+  <link rel="stylesheet" href="css/pills.css?v=1">
+  <link rel="stylesheet" href="css/motion-pills.css?v=20261002-visible2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/MorphSVGPlugin.min.js" defer></script>
+  <script type="module" src="js/pills/extras.mjs?v=20261002-visible2"></script>
+  <script type="module" src="js/pills/demo.mjs?v=1"></script>
+</head>
+<body class="pill-page">
+  <header class="playground-header"><a href="index.html">pxrivizz / portfolio</a><span>Motion playground</span></header>
+  <main>
+    <div class="playground-intro"><p>Small interactions, a little personality.</p><h1>Made to be<br>played with.</h1><p id="work-help">Move across Work, tap it, or use Enter / Space. Each hammer hit leaves a mark. Fourteen hits, then a fresh start.</p></div>
+    <section aria-label="Pill interaction demos" class="pill-stage">
+      <div class="pill-track" tabindex="0" aria-label="Scrollable pill demos">
+        <button class="pill pill--work" type="button" aria-label="Work" aria-describedby="work-help" data-work disabled>
+          <img class="pill-icon work-hammer" src="assets/icons/pill-hammer.svg?v=20261002-pickaxe2" width="32" height="32" alt="">
+          <span aria-hidden="true" class="work-word"><span class="work-letter">W</span><span class="work-letter">o</span><span class="work-letter">r</span><span class="work-letter">k</span></span>
+        </button>
+        <button class="pill" type="button" data-demo-process><img class="pill-icon" src="assets/icons/pill-asterisk.svg" alt="">Process</button>
+        <button class="pill" type="button" data-demo-about><img class="pill-icon" src="assets/icons/pill-eyes.svg" alt="">About</button>
+        <button class="pill" type="button" data-heart aria-label="Heart" aria-pressed="false"><img class="pill-icon" src="assets/icons/pill-heart.svg" alt="">Heart</button>
+        <button class="pill" type="button" data-demo-back><img class="pill-icon" src="assets/icons/pill-back.svg" alt="">Back</button>
+      </div>
+    </section>
+    <div class="playground-notes"><p data-work-status role="status" aria-live="polite">Loading Work…</p><button type="button" class="reset-work" data-reset disabled>Reset Work</button><p>About follows your pointer. Hover or focus Process and Back; tap Back to toggle its arrow. On the portfolio, these pills remain normal navigation links.</p><noscript>Enable JavaScript to try the animations.</noscript></div>
+  </main>
+  <footer class="playground-footer"><span>Halil Çiftçi</span><a href="index.html#work">Explore my projects ↗</a></footer>
+</body>
+</html>

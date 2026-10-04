@@ -1,0 +1,10 @@
+{
+  "name": "pxrivizz-portfolio",
+  "private": true,
+  "scripts": {
+    "vendor": "node scripts/vendor-gsap.cjs",
+    "postinstall": "npm run vendor",
+    "test": "node --test tests/*.test.cjs tests/*.test.mjs"
+  },
+  "dependencies": { "gsap": "3.13.0" }
+}

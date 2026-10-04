@@ -1,0 +1,56 @@
+import { chromium } from '@playwright/test'
+import { mkdir, writeFile } from 'node:fs/promises'
+const base = 'http://127.0.0.1:4173/experience/'
+const out = new URL('../docs/checks/', import.meta.url)
+await mkdir(out, { recursive: true })
+const browser = await chromium.launch({ channel: 'chrome', headless: true })
+const checks = []
+const errors = []
+const assert = (ok, message) => { if (!ok) throw new Error(message); checks.push(message) }
+try {
+  const page = await browser.newPage({ viewport: { width: 1440, height: 960 } })
+  page.on('pageerror', (error) => errors.push(error.message))
+  page.on('response', (response) => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`) })
+  await page.goto(base)
+  await page.locator('canvas[data-scene-ready="true"]').waitFor()
+  await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))))
+  await page.locator('canvas').evaluate((node) => { node.dataset.persistentCheck = 'original' })
+  await page.screenshot({ path: new URL('desktop.png', out).pathname })
+  await page.getByRole('button', { name: 'Portfolyoyu keşfet' }).click()
+  await page.getByRole('heading', { name: 'Biraz merak. Çokça üretim.' }).waitFor()
+  await page.waitForFunction(() => document.activeElement?.tagName === 'H1')
+  assert(await page.locator('canvas').count() === 1, 'Exactly one Canvas after transition')
+  assert(await page.locator('canvas').getAttribute('data-persistent-check') === 'original', 'Canvas persists across transition')
+  assert(await page.locator('[data-scene]').count() === 1, 'Outgoing overlay unmounted after transition')
+  await page.screenshot({ path: new URL('hub-shell.png', out).pathname })
+  await page.getByRole('link', { name: 'Deneyim', exact: false }).first().click()
+  assert(await page.locator('#experience-heading').isVisible(), 'Experience content reachable')
+  for (const width of [375, 768, 1024]) {
+    await page.setViewportSize({ width, height: 844 })
+    await page.goto(base)
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `No horizontal overflow at ${width}px`)
+    await page.locator('canvas[data-scene-ready="true"]').waitFor()
+    if (width === 375) await page.screenshot({ path: new URL('mobile.png', out).pathname })
+  }
+  const reduced = await browser.newPage({ reducedMotion: 'reduce' })
+  await reduced.goto(base)
+  assert(await reduced.getByRole('heading', { name: 'Biraz merak. Çokça üretim.' }).count() === 1, 'Reduced motion starts at hub')
+  const keyboard = await browser.newPage()
+  await keyboard.goto(base)
+  await keyboard.keyboard.press('Tab')
+  assert(await keyboard.evaluate(() => document.activeElement?.textContent === 'Doğrudan içeriğe geç'), 'Skip link is first keyboard focus')
+  const nojs = await browser.newPage({ javaScriptEnabled: false })
+  await nojs.goto(base)
+  assert(await nojs.getByRole('heading', { name: 'Sabancı Üniversitesi' }).count() === 1, 'Experience present without JavaScript')
+  assert(await nojs.getByRole('heading', { name: 'QR Yoklama' }).count() === 1, 'Projects present without JavaScript')
+  await nojs.screenshot({ path: new URL('no-js.png', out).pathname, fullPage: true })
+  const lost = await browser.newPage()
+  await lost.goto(base)
+  await lost.locator('canvas').waitFor()
+  await lost.locator('canvas').evaluate((canvas) => canvas.dispatchEvent(new Event('webglcontextlost', { cancelable: true })))
+  await lost.getByText('Sade görünüm etkin. Tüm içerikler aşağıda.').waitFor()
+  assert(await lost.getByRole('link', { name: 'Sade görünüm', exact: true }).isVisible(), 'Context loss retains usable navigation')
+  assert(errors.length === 0, `No page errors or failed resource requests: ${JSON.stringify(errors)}`)
+  await writeFile(new URL('results.json', out), JSON.stringify({ checks, limitations: ['Not a real phone test', 'No mid-range GPU performance benchmark', 'Intro and foundation checked; remaining narrative scenes not built'] }, null, 2))
+  console.log(checks.join('\n'))
+} finally { await browser.close() }

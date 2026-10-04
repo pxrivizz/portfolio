@@ -1,0 +1,260 @@
+[
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-animation/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-animation",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-fundamentals/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-fundamentals",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-geometry/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-geometry",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-interaction/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-interaction",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-lighting/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-lighting",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-loaders/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-loaders",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-materials/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-materials",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-postprocessing/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-postprocessing",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-shaders/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-shaders",
+    "status": "already installed"
+  },
+  {
+    "repo": "cloudai-x/threejs-skills",
+    "path": "skills/threejs-textures/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-textures",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-core/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-core",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-frameworks/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-frameworks",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-performance/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-performance",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-plugins/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-plugins",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-react/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-react",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-scrolltrigger/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-scrolltrigger",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-timeline/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-timeline",
+    "status": "already installed"
+  },
+  {
+    "repo": "greensock/gsap-skills",
+    "path": "skills/gsap-utils/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap-utils",
+    "status": "already installed"
+  },
+  {
+    "repo": "zanwei/design-dna",
+    "path": "SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/design-dna",
+    "status": "already installed"
+  },
+  {
+    "repo": "lottiefiles/motion-design-skill",
+    "path": "skills/motion-design/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/motion-design",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/canvas-generative/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/canvas-generative",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/compose-graphics/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/compose-graphics",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/compose-motion/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/compose-motion",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/compose-multiplatform/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/compose-multiplatform",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/css-native/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/css-native",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/design-audit/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/design-audit",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/desktop-principles/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/desktop-principles",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/framer-motion/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/framer-motion",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/gsap/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/gsap",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/mobile-principles/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/mobile-principles",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/motion-principles/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/motion-principles",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/orchestration/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/orchestration",
+    "status": "installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/swiftui-graphics/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/swiftui-graphics",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/swiftui-motion/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/swiftui-motion",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/tells/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/tells",
+    "status": "installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/threejs-r3f/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/threejs-r3f",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/_jutsu/ui-ux-pro-max/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/genjutsu-ui-ux-pro-max",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/bunshin/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/bunshin",
+    "status": "installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/cast/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/cast",
+    "status": "already installed"
+  },
+  {
+    "repo": "athevon/genjutsu",
+    "path": "skills/paint/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/paint",
+    "status": "already installed"
+  },
+  {
+    "repo": "anthropics/skills",
+    "path": "skills/frontend-design/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/frontend-design",
+    "status": "already installed"
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "path": "skills/taste-skill/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/taste-skill",
+    "status": "already installed"
+  },
+  {
+    "repo": "nateherkai/scroll-craft",
+    "path": "plugins/nateherk-design/skills/scroll-craft/SKILL.md",
+    "local": "/Users/halilciftci/.codex/skills/scrollcraft",
+    "status": "already installed"
+  }
+]

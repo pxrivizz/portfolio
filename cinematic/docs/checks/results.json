@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "Exactly one Canvas after transition",
+    "Canvas persists across transition",
+    "Outgoing overlay unmounted after transition",
+    "Experience content reachable",
+    "No horizontal overflow at 375px",
+    "No horizontal overflow at 768px",
+    "No horizontal overflow at 1024px",
+    "Reduced motion starts at hub",
+    "Skip link is first keyboard focus",
+    "Experience present without JavaScript",
+    "Projects present without JavaScript",
+    "Context loss retains usable navigation",
+    "No page errors or failed resource requests: []"
+  ],
+  "limitations": [
+    "Not a real phone test",
+    "No mid-range GPU performance benchmark",
+    "Intro and foundation checked; remaining narrative scenes not built"
+  ]
+}

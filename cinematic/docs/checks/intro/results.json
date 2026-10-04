@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Pause stops continuous rendering",
+    "Pause holds greeting position",
+    "Greeting leaves the scene as clouds rise",
+    "Replay resets intro",
+    "Skipping a replay preserves one Canvas",
+    "Mobile has no horizontal overflow",
+    "Mobile DPR capped: 1.2487179487179487",
+    "Scrolling to HTML content stops rendering",
+    "Reduced motion skips intro and cloud downloads",
+    "Changing preference back does not force replay",
+    "Failed cloud loads retain working navigation",
+    "No uncaught errors: []"
+  ],
+  "limits": [
+    "Real mobile hardware not tested",
+    "No mid-range laptop GPU benchmark"
+  ]
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#0a0a0a"/>
+  <g fill="none" stroke="#c9b17b" stroke-width="1">
+    <circle cx="600" cy="400" r="270" opacity=".35"/>
+    <circle cx="600" cy="400" r="210" opacity=".25"/>
+    <path d="M0 400h1200M600 0v800" opacity=".16"/>
+    <rect x="200" y="160" width="800" height="480" rx="8" fill="#14130f"/>
+    <path d="M200 206h800M460 206v434" opacity=".4"/>
+  </g>
+  <g fill="#c9b17b"><circle cx="225" cy="182" r="4"/><circle cx="243" cy="182" r="4"/><circle cx="261" cy="182" r="4"/>
+    <path d="M240 250h172v10H240zm0 28h136v5H240zm0 19h153v5H240zm0 19h115v5H240z" opacity=".6"/>
+    <rect x="240" y="540" width="125" height="42" rx="21"/>
+  </g>
+  <g fill="none" stroke="#efe8df" stroke-width="2" opacity=".75"><ellipse cx="730" cy="420" rx="178" ry="70" transform="rotate(-30 730 420)"/><ellipse cx="730" cy="420" rx="178" ry="70" transform="rotate(30 730 420)"/><circle cx="730" cy="420" r="105"/></g>
+  <circle cx="730" cy="420" r="25" fill="#c9b17b"/>
+</svg>

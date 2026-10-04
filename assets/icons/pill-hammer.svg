@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" stroke="#171612" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Keep the grip near (29, 34), matching the animation's handle pivot. -->
+  <path fill="#c6a16a" d="m15.1 12.9 17.1 18.9c.8.9.5 2-.4 2.8l-1.2 1c-.9.7-2.1.5-2.8-.5L12.9 16.6Z"/>
+  <!-- A broad curved steel head and tapered tips read clearly at 28px. -->
+  <path fill="#f4eee1" d="M3.5 21.3C5.2 12.4 10.3 6.7 17.4 6.5c6.8-.2 13.5 3.8 18.3 10.8-6.8-4.2-12.5-5.7-17.3-4.3-5.6 1.6-10.2 5.3-14.9 8.3Z"/>
+  <path d="m14.2 7.2 3.4 6.1" stroke-width="1.6"/>
+  <path d="m26.9 29.7 3.4-2.8" stroke-width="1.5"/>
+</svg>

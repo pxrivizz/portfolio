@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "Intro remains active while clouds rise",
+    "Intro greeting and clouds follow scroll progress: 0.4974",
+    "Cloud transition preserves one Canvas",
+    "Canvas element persists into cloud flight",
+    "Intro and flight share one mounted 3D journey",
+    "Door stays hidden during the cloud handoff: 0",
+    "Cloud flight creates a long scroll journey",
+    "Mid-flight progress responds to scroll: 0.3156",
+    "Door fades in gradually after the clouds: 0.8477",
+    "Door threshold completes without entering the unbuilt tunnel",
+    "Restart reverses the same journey back to the intro",
+    "Time fallback advances the same scroll journey",
+    "Manual input stops time fallback",
+    "Cloud scene has no mobile horizontal overflow",
+    "Mobile DPR remains capped: 1.2487179487179487",
+    "No uncaught page errors: []"
+  ],
+  "limits": [
+    "Real touch hardware not tested",
+    "No mid-range GPU benchmark"
+  ]
+}
